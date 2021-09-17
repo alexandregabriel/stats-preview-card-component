@@ -10,7 +10,8 @@
   --main-background: hsl(233, 47%, 7%);
   --card-background: hsl(244, 38%, 16%);
   --accent: hsl(277, 64%, 61%);
-  --accent-overlay: hsla(277, 64%, 61%, 50%)
+  --accent-overlay: hsla(277, 64%, 61%, 50%);
+  --paragraph-color: rgb(160, 160, 160);
 }
 
 *{
@@ -37,6 +38,13 @@ body {
 
 }
 
+p {
+  color: var(--paragraph-color);
+  font-weight: 400;
+  font-size: 0.9375rem;
+  line-height: 1.5rem;
+}
+
 .container {
   background-color: var(--card-background);
   display: grid;
@@ -44,7 +52,7 @@ body {
   grid-template-areas: 
     'content header';
   width: 80vw;
-  border-radius: 0.5rem;
+  border-radius: 0.6rem;
   overflow: hidden;
 
 }
@@ -67,8 +75,11 @@ body {
 }
 
 .content {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
   grid-area: content;
-  padding: 13% 12%;
+  padding: 12% 20% 12% 12%;
 }
 
 .accent {
@@ -76,8 +87,26 @@ body {
 }
 
 .proof {
+  font-family: 'Lexend Deca', sans-serif;
   display: flex;
   justify-content: space-between;
-  width: 90%
+  padding-top: 3rem;
+  width: 90%;
+  
 
+}
+
+.text-up {
+  text-transform: uppercase;
+}
+
+.proof h2 {
+  padding-bottom: 0.5rem;
+}
+
+.proof p {
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  font-weight: 500;
+  letter-spacing: 0.05rem
 }
