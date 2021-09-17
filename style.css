@@ -110,10 +110,6 @@ p {
 
 @media screen and (max-width: 900px){
 
-  p {
-    font-size: 0.85rem;
-  }
-
   h1{
     font-size: 1.8rem;
   }
@@ -144,6 +140,10 @@ p {
 
   .proof h2 {
     padding-bottom: 0.25rem;
+  }
+
+  .proof p {
+    font-size: 0.87rem
   }
 
 }
